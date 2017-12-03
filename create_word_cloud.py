@@ -31,6 +31,7 @@ def main(input_filename):
     print '# of different words =', len(words_stat)
 
     input_prefix = input_filename
+    print 'Saving to csv'
     words_stat.to_csv(input_prefix + ".csv",encoding='utf-8')
 
     if input_filename.find('.') != -1:
